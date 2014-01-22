@@ -1,0 +1,25 @@
+
+LAYER
+    NAME "centroid"
+    TYPE POLYGON
+    STATUS ON
+    CLASS
+      STYLE
+        GEOMTRANSFORM "centroid"
+        SYMBOL "circle"
+        COLOR 0 0 0
+        OUTLINECOLOR 255 0 0
+        SIZE 5
+      END
+    END
+    FEATURE
+      POINTS
+-166.245673 -55.551347
+174.019748 -55.551347
+174.019748 53.883753
+-166.245673 53.883753
+-166.245673 -55.551347
+      END
+    END
+
+END

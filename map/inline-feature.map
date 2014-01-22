@@ -1,0 +1,54 @@
+MAP
+    NAME 'default'
+    CONFIG "MS_ERRORFILE" "../debugFile.log"
+    CONFIG 'PROJ_LIB' '../'
+    SIZE 500 500
+    EXTENT -170.245673 -55.551347 179.019748 53.883753
+    UNITS meters
+    IMAGETYPE png24
+    IMAGECOLOR '#EEEEEE'
+
+    DEBUG 5
+    PROJECTION
+        "init=epsg:4326"
+    END
+
+    WEB
+        METADATA
+            "ows_enable_request" "*"
+        END
+    END
+    
+  SYMBOL
+    TYPE TRUETYPE
+    FONT "default"
+    NAME "arrowhead"
+    CHARACTER '>'
+  END
+
+  SYMBOL
+    TYPE TRUETYPE
+    FONT "default"
+    NAME "arrowtail"
+    CHARACTER '<'
+  END
+
+  SYMBOL
+    TYPE TRUETYPE
+    FONT "default"
+    CHARACTER '|'
+    NAME "segment"
+  END
+
+  SYMBOL
+    TYPE ELLIPSE
+    POINTS 1 1 END
+    NAME "circle"
+    FILLED true
+  END
+    
+        
+    ##INCLUDE '../symbols.map'
+    INCLUDE 'layers/inline.map'
+    
+END
